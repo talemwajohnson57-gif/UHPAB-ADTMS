@@ -26,17 +26,28 @@ EXAM-RELEVANT FEATURES
 DEMONSTRATION LOGIN
 No password is required. Select any demonstration role on the opening screen.
 
+ROLE PRIVILEGES
+Each role sees only its own menu items and can only perform its own actions (see Users & roles, available to System Administrator):
+- Awards Officer: all operational screens; registers requests; edits status, officer, error source, payment, location, notes; records dispatch.
+- IT Department: register (read) and Verification; records IT verification and notes.
+- Assessment Department: register (read) and Verification; records assessment confirmation, error source and notes.
+- Production Staff: register (read), Production and Deliveries; updates production status, quality check, location, status; records dispatch.
+- School Representative: School deliveries only; acknowledges receipt.
+- Supervisor: read-only view of cases, verification, production, deliveries and reports.
+- Senior Management: Dashboard and MIS reports only.
+- System Administrator: Dashboard and Users & roles only.
+- Student: Student tracking only.
+
 IMPORTANT LIMITATIONS
 This is an academic front-end prototype. It uses fictional sample records and browser local storage.
 Role selection is for demonstration and is not secure server-side authorisation. It is not connected to UHPAB official databases and must not be used for real student records, official payments, or official decisions.
 A live system would require UHPAB approval, secure server-side authentication and authorisation, a relational database, encryption, audit logs, backups, retention rules and ICT/data-protection review.
 
-SUGGESTED DEMONSTRATION
-1. Register a correction request.
-2. Open the case and record IT and Assessment confirmations.
-3. Update its production status and quality-check result.
-4. Mark it Ready for dispatch.
-5. Record dispatch to a fictional school.
-6. Acknowledge receipt with an evidence reference.
+SUGGESTED DEMONSTRATION (sign out and switch role between steps)
+1. As Awards Officer: register a correction request.
+2. As IT Department, then Assessment Department: open the case and record confirmations.
+3. As Production Staff: update production status and quality-check result; mark it Ready for dispatch.
+4. As Awards Officer or Production Staff: record dispatch to a fictional school.
+5. As School Representative: acknowledge receipt with an evidence reference.
 7. Open MIS Reports and explain the operational, tactical and strategic indicators.
 8. Use Student Tracking with the tracking number and registration reference.
